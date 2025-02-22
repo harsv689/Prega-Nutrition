@@ -42,7 +42,7 @@
 
 ### 1️⃣ Clone the Repository
 ```sh
- git clone https://github.com/YOUR_USERNAME/pregnancy-nutrition-assistant.git
+ git clone https://github.com/harsv689/pregnancy-nutrition-assistant.git
  cd pregnancy-nutrition-assistant
 ```
 
