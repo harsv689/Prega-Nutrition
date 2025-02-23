@@ -6,13 +6,10 @@ import {
   BookOpen,
   Share,
   Bell,
-  Calendar,
   ShoppingCart,
   Clock,
   ArrowRight,
   FileText,
-  Heart,
-  Settings,
 } from "lucide-react";
 import Head from "next/head";
 

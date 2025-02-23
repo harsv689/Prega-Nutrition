@@ -1,6 +1,6 @@
 // pages/share-with-doctor.js
 import React, { useState } from 'react';
-import { Share2, Download, Mail, Phone, Copy, FileText, Check } from 'lucide-react';
+import { Download, Mail, Phone, Copy, FileText, Check } from 'lucide-react';
 import Head from 'next/head';
 
 export default function ShareWithDoctorPage() {

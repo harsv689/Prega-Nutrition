@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Mic, Type, Camera, Plus, Check, X, AlertCircle } from 'lucide-react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Mic, Plus, Check, X, AlertCircle } from 'lucide-react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 // Types for our component

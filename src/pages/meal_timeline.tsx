@@ -1,5 +1,5 @@
 // pages/meal-timeline.js
-import React, { useState } from 'react';
+import React from 'react';
 import { Calendar } from 'lucide-react';
 import Head from 'next/head';
 

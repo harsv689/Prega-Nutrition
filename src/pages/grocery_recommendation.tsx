@@ -1,6 +1,6 @@
 // pages/grocery-recommendations.js
-import React, { useState } from 'react';
-import { ShoppingCart, TrendingDown, Apple, Fish, Wheat, Carrot } from 'lucide-react';
+import React from 'react';
+import { ShoppingCart, TrendingDown, Apple, Fish, Wheat } from 'lucide-react';
 import Head from 'next/head';
 
 export default function GroceryRecommendationsPage() {
