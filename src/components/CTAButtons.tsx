@@ -41,8 +41,8 @@ const CTAButtons = () => {
       {/* Quick Actions */}
       <div className="space-y-4">
         <h2 className="text-xl font-bold text-gray-800 mb-4">Quick Actions</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4" onClick={() => router.push("/today_plan")}>
-          <button className="flex flex-col items-center justify-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <button className="flex flex-col items-center justify-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors" onClick={() => router.push("/today_plan")}>
             <BookOpen size={24} className="text-blue-600 mb-2" />
             <span className="text-sm font-medium text-blue-600">View Today&apos;s Plan</span>
           </button>
@@ -56,11 +56,6 @@ const CTAButtons = () => {
             <Bell size={24} className="text-green-600 mb-2" />
             <span className="text-sm font-medium text-green-600" >Set Reminders</span>
           </button>
-
-          {/* <button className="flex flex-col items-center justify-center p-4 bg-orange-50 rounded-lg hover:bg-orange-100 transition-colors">
-            <Calendar size={24} className="text-orange-600 mb-2" />
-            <span className="text-sm font-medium text-orange-600">Schedule Check-up</span>
-          </button> */}
         </div>
       </div>
 
