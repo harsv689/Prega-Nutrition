@@ -5,7 +5,7 @@ const WaterTrackingPage = () => {
     const [waterIntake, setWaterIntake] = useState(0);
     const [goal] = useState(2000); // Default goal of 2000ml
 
-    const addWater = (amount) => {
+    const addWater = (amount : number) => {
         setWaterIntake(prev => Math.max(0, prev + amount));
     };
 

@@ -3,23 +3,33 @@ import React, { useState } from 'react';
 import { Bell, Clock } from 'lucide-react';
 import Head from 'next/head';
 
-export default function ReminderSettingsPage() {
-  const [waterReminders, setWaterReminders] = useState(['09:00', '13:00', '17:00']);
-  const [mealReminders, setMealReminders] = useState(['08:00', '13:00', '19:00']);
+type ReminderType = "water" | "meal";
 
-  const addReminder = (type) => {
-    if (type === 'water') {
-      setWaterReminders([...waterReminders, '12:00']);
+export default function ReminderSettingsPage() {
+  const [waterReminders, setWaterReminders] = useState<string[]>([
+    "09:00",
+    "13:00",
+    "17:00",
+  ]);
+  const [mealReminders, setMealReminders] = useState<string[]>([
+    "08:00",
+    "13:00",
+    "19:00",
+  ]);
+
+  const addReminder = (type: ReminderType): void => {
+    if (type === "water") {
+      setWaterReminders((prev) => [...prev, "12:00"]);
     } else {
-      setMealReminders([...mealReminders, '12:00']);
+      setMealReminders((prev) => [...prev, "12:00"]);
     }
   };
 
-  const removeReminder = (type, index) => {
-    if (type === 'water') {
-      setWaterReminders(waterReminders.filter((_, i) => i !== index));
+  const removeReminder = (type: ReminderType, index: number): void => {
+    if (type === "water") {
+      setWaterReminders((prev) => prev.filter((_, i) => i !== index));
     } else {
-      setMealReminders(mealReminders.filter((_, i) => i !== index));
+      setMealReminders((prev) => prev.filter((_, i) => i !== index));
     }
   };
 
