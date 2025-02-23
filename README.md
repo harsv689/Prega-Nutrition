@@ -90,4 +90,4 @@ For queries or collaborations, reach out via [harsv567@gmail.com](mailto:your-em
 
 ---
 
-🔗 **Live Demo:** _Coming Soon_
+🔗 **Live Demo:** https://prega-nutrition.vercel.app/
