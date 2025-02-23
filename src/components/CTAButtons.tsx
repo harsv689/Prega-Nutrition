@@ -44,7 +44,7 @@ const CTAButtons = () => {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4" onClick={() => router.push("/today_plan")}>
           <button className="flex flex-col items-center justify-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
             <BookOpen size={24} className="text-blue-600 mb-2" />
-            <span className="text-sm font-medium text-blue-600">View Today's Plan</span>
+            <span className="text-sm font-medium text-blue-600">View Today&apos;s Plan</span>
           </button>
 
           <button className="flex flex-col items-center justify-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors" onClick={() => router.push("/share_with_doctor")}>

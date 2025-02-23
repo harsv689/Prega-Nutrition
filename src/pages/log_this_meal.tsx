@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { Camera, Upload, X, Loader } from 'lucide-react';
 import { useRouter } from 'next/router';
-
+import Image from 'next/image';
 
 const MealLogger = () => {
   const router = useRouter();
@@ -96,10 +96,12 @@ const MealLogger = () => {
         )}
         
         {preview && (
-          <img
+          <Image
             src={preview}
             alt="Meal preview"
             className="w-full h-full object-cover"
+            width={500} 
+            height={300}
           />
         )}
 

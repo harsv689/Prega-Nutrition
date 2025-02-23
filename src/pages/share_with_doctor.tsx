@@ -14,6 +14,7 @@ export default function ShareWithDoctorPage() {
     { id: 2, name: 'Dr. Michael Chen', specialty: 'General Physician', lastShared: '2024-02-20' },
     { id: 3, name: 'Dr. Emily Williams', specialty: 'Dietitian', lastShared: null }
   ];
+  
 
   const reportSections = [
     { id: 'nutrition', label: 'Nutrition Summary', selected: true },
@@ -26,6 +27,7 @@ export default function ShareWithDoctorPage() {
   const handleShare = (method) => {
     setIsSharing(true);
     setShareMethod(method);
+    console.log("Share method selected:", shareMethod);
     
     // Simulate sharing process
     setTimeout(() => {

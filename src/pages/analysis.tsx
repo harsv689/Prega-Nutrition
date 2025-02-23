@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Mic, Plus, Check, X, AlertCircle } from 'lucide-react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+
 // Types for our component
 interface NutrientInfo {
     amount: number;
@@ -103,10 +105,12 @@ const FoodRecognitionPage = () => {
 
                         <div className="grid md:grid-cols-2 gap-6">
                             <div>
-                                <img
+                                <Image
                                     src="/api/placeholder/400/300"
                                     alt="Food"
                                     className="rounded-xl w-full object-cover mb-4"
+                                    width={500} 
+                                    height={300}
                                 />
                                 <div className="flex items-center justify-between bg-slate-50 p-4 rounded-xl">
                                     <div>

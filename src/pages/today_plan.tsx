@@ -70,7 +70,7 @@ export default function TodaysPlanPage() {
   return (
     <>
       <Head>
-        <title>Today's Plan</title>
+        <title>Today&apos;s Plan</title>
       </Head>
 
       <div className="min-h-screen bg-gray-50">
@@ -79,7 +79,7 @@ export default function TodaysPlanPage() {
             <div className="flex justify-between h-16 items-center">
               <div className="flex items-center gap-2">
                 <Clock className="text-blue-500" />
-                <h1 className="text-xl font-semibold">Today's Plan</h1>
+                <h1 className="text-xl font-semibold">Today&apos;s Plan</h1>
               </div>
               <button 
                 onClick={() => window.history.back()}
