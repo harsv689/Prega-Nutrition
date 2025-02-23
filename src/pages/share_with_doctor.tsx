@@ -3,11 +3,20 @@ import React, { useState } from 'react';
 import { Download, Mail, Phone, Copy, FileText, Check } from 'lucide-react';
 import Head from 'next/head';
 
+type Doctor = {
+  id: number;
+  name: string;
+  specialty: string;
+  lastShared: string | null;
+};
+
+
 export default function ShareWithDoctorPage() {
   const [isSharing, setIsSharing] = useState(false);
   const [shareSuccess, setShareSuccess] = useState(false);
-  const [selectedDoctor, setSelectedDoctor] = useState(null);
-  const [shareMethod, setShareMethod] = useState(null);
+  // const [selectedDoctor, setSelectedDoctor] = useState(null);
+  // const [shareMethod, setShareMethod] = useState(null);
+  const [selectedDoctor, setSelectedDoctor] = useState<Doctor | null>(null);
 
   const doctors = [
     { id: 1, name: 'Dr. Sarah Johnson', specialty: 'Nutritionist', lastShared: '2024-02-15' },
@@ -24,19 +33,35 @@ export default function ShareWithDoctorPage() {
     { id: 'medications', label: 'Medications', selected: false }
   ];
 
-  const handleShare = (method) => {
+  // const handleShare = (method : string) => {
+  //   setIsSharing(true);
+  //   setShareMethod(method);
+  //   console.log("Share method selected:", shareMethod);
+    
+  //   // Simulate sharing process
+  //   setTimeout(() => {
+  //     setIsSharing(false);
+  //     setShareSuccess(true);
+  //     setTimeout(() => setShareSuccess(false), 3000);
+  //   }, 2000);
+  // };
+
+  type ShareMethod = "email" | "sms" | "whatsapp" | "download" | "copy";
+
+  const [shareMethod, setShareMethod] = useState<ShareMethod | null>(null);
+  
+  const handleShare = (method: ShareMethod) => {
     setIsSharing(true);
     setShareMethod(method);
+    console.log("Share method selected:", method);
     console.log("Share method selected:", shareMethod);
-    
-    // Simulate sharing process
     setTimeout(() => {
       setIsSharing(false);
       setShareSuccess(true);
       setTimeout(() => setShareSuccess(false), 3000);
     }, 2000);
   };
-
+  
   return (
     <>
       <Head>

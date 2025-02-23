@@ -55,7 +55,7 @@ export default function TodaysPlanPage() {
     { time: '17:00', text: 'Evening Water Break' }
   ];
 
-  const toggleMealCompletion = (mealId) => {
+  const toggleMealCompletion = (mealId : string) => {
     setCompletedMeals(prev => 
       prev.includes(mealId) 
         ? prev.filter(id => id !== mealId)
@@ -63,7 +63,7 @@ export default function TodaysPlanPage() {
     );
   };
 
-  const addWater = (amount) => {
+  const addWater = (amount : number) => {
     setWaterIntake(prev => Math.min(waterGoal, Math.max(0, prev + amount)));
   };
 
